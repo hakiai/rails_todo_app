@@ -1,0 +1,5 @@
+<p>タイトル: <%= @task.title %></p>
+<p>説明: <%= @task.description %></p>
+<p>完了フラグ: <%= @task.is_done ? '完了済み' : '未完了' %></p>
+<p><%= link_to'編集', edit_task_path(params[:id]) %> | <%= link_to 'Destroy', task_path, method: :delete %></p>
+<p><%= link_to '一覧に戻る', tasks_path %></p>
